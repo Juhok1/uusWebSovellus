@@ -3,7 +3,8 @@ import { useState, useRef, useEffect } from "react"
 
 
 
- 
+
+
 
 
 
@@ -18,11 +19,11 @@ const App = () => {
 
     
 
-    fetch("http://localhost:5000",{
+    fetch("https://localhost:5000",{
       method: "POST",
       body: new FormData(formRef.current),
     })
-    .then(response => response.json())
+    .then(response => response.status(201))
     .then(data => {
       console.log("Datan lähetys onnistui")
       setRegisternumber('')
@@ -37,10 +38,10 @@ const App = () => {
     console.log("Pass the information of the vehicle")};
 
     const fetchData = () => {
-      fetch("http://localhost:5000", {
+      fetch("https://localhost:5000", {
         method: "GET",
       })
-        .then(response => response.json())
+        
         .then(data => {
           console.log("Datan haku onnistui", data);
           setVehicleData(data);
