@@ -8,11 +8,6 @@ import bcrypt from "bcrypt"; // Salasanojen hashaukseen
 const app = express();
 const vehicleDatabase = [];
 
-// Simppeli käyttäjärekisteri (oikeassa sovelluksessa käytä tietokantaa!)
-const users = [
-  { username: "testi", password: bcrypt.hashSync("salasana", 10) } // Esimerkki
-];
-
 const options = {
   key: fs.readFileSync("localhost.key"),
   cert: fs.readFileSync("localhost.crt"),

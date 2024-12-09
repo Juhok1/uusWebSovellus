@@ -8,8 +8,7 @@ const App = () => {
   const showNotification = () => {
     if (Notification.permission === "granted") {
       const notification = new Notification("Data haettu", {
-        body: "Tietojen haku onnistui!",
-        color: "green"
+        body: "Tietojen haku onnistui!"
       });
 
       setTimeout(() => {

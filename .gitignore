@@ -25,3 +25,4 @@ dist-ssr
 *.crt
 *.key
 *.pem
+login.jsx
