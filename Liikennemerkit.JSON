@@ -1,0 +1,25 @@
+[
+    {
+      "id": 1,
+      "name": "Väistämisvelvollisuus",
+      "image": "yield.png",
+      "type": "varoitus",
+      "options": ["Stop-merkki", "Väistämisvelvollisuus", "Kärkikolmio"]
+    },
+    {
+      "id": 2,
+      "name": "Nopeusrajoitus 50 km/h",
+      "image": "speed50.png",
+      "type": "kieltomerkki",
+      "options": ["Nopeusrajoitus 30", "Nopeusrajoitus 50", "Ajokieltomerkki"]
+    },
+    {
+        "id": 3,
+        "name": "Moottoritien merkki",
+        "image": "moottoritie.png",
+        "type": "aluemerkki",
+        "options": ["Moottoritie alkaa", "Moottoritie päättyy", "Hiihtolatu"]
+      }
+
+  ]
+  
