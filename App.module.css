@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(0, 255, 21, 0.459);  /* Punainen väri ja 80% opasiteetti */
+  overflow: hidden;
+  font-weight: bold;
+  
+
+}
+form div {
+  margin-bottom:1rem;
+}
+button {
+  position: relative;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+label {
+  display: block;
+  color: green;
+}
+h1 {
+  color: green;
+  font-size:4rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Auton kontti */
+.car {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background-color: red; /* Auton väri */
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 50px;
+  transition: transform 1s ease-in-out;
+}
+
+/* Liikkuu oikealta vasemmalle */
+.car.move {
+  animation: moveCar 5s linear infinite;
+}
+
+/* Auton ikkuna */
+.car-window {
+  position: relative;
+  top: 10px;
+  left: 50px;
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* Auton pyörät */
+.car-wheel {
+  position: absolute;
+  bottom: -25px;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  border: 3px solid gray;
+}
+
+.car-wheel-front {
+  left: 20px;
+}
+
+.car-wheel-back {
+  right: 20px;
+}
+/* Vaihdekeppi */
+.gear-shift {
+  width: 30px;
+  height: 50px;
+  background-color: #333;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.5s ease-in-out; /* Liikuttaa vaihteen vaihtoa */
+}
+.gear-diagram {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  margin: 50px auto;
+}
+
+.gear-position {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+}
+#gear0{
+  top:45px;
+  left:100px;
+}
+
+#gear1 {
+  top: -10px;
+  left: 10px;
+}
+
+#gear2 {
+  bottom: 70px;
+  left: 10px;
+}
+
+#gear3 {
+  top: -10px;
+  right: 70px;
+}
+
+#gear4 {
+  bottom: 70px;
+  right: 70px;
+}
+
+#gear5 {
+  top: -10px;
+  right: -20px;
+}
+
+#gear6 {
+  bottom: 70px;
+  right: -20px;
+}
+
+/* Asennot */
+.gear-1 {
+  transform: translateX(-300%) translateY(-70px); /* 1. vaihde */
+}
+
+.gear-2 {
+  transform: translateX(-300%) translateY(40px); /* 2. vaihde */
+}
+
+.gear-3 {
+  transform: translateX(0%) translateY(-70px); /* 3. vaihde */
+}
+.gear-0 {
+  transform: translateX(0%) translateY(-15px); /* Vapaa */
+}
+
+.gear-4 {
+  transform: translateX(0%) translateY(40px); /* 4. vaihde */
+}
+.gear-5 {
+  transform: translateX(300%) translateY(-70px); /* 5. vaihde */
+}
+.gear-6 {
+  transform: translateX(300%) translateY(40px); /* 6. vaihde */
+}
+.gear-6 {
+  transform: translateX(300%) translateY(40px); /* 6. vaihde */
+}
+
+
+/* Animaatio auton liikkeelle */
+@keyframes moveCar {
+  0% {
+    transform: translateX(-400px);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
