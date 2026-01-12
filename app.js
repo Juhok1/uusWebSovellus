@@ -11,7 +11,7 @@ const vehicleDatabase = [];
 const options = {
   key: fs.readFileSync("localhost.key"),
   cert: fs.readFileSync("localhost.crt"),
-  passphrase: "Pokkoti03",
+  passphrase: "",
 };
 
 // Middlewaret

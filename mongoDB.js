@@ -4,7 +4,7 @@ const app = express();
 const port = 5000; // Määritä portti täällä
 const register = process.argv[0];
 const mark = process.argv[1];
-const uri = "mongodb+srv://juho_k_21:h8A84q3J4.u9VAY@cluster0.vaszlwb.mongodb.net/"
+const uri = "mongodb+srv://juho_k_21:<>Y@cluster0.vaszlwb.mongodb.net/"
 
 app.listen(port, () => {
   console.log(`Palvelin käynnissä osoitteessa http://localhost:${port}`);
